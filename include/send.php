@@ -1,6 +1,6 @@
 <?php
-$LicensePlate = $_POST['licenseplate'];
-$SeasonTicketID = $_POST['seasonticket'];
+$LicensePlate = $_POST['lplate'];
+$SeasonTicketID = $_POST['sticket'];
 
 require 'db.php';
 
