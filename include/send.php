@@ -7,7 +7,7 @@ require 'db.php';
 $send = "insert into parking.parking (LicensePlate, SeasonTicketID) values ('$LicensePlate', '$SeasonTicketID')";
 
 if($conn->query($send)) {
-    header('Location: ../forms.php');
+    header('Location: ../index.php');
 
 }
 else
