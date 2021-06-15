@@ -1,17 +1,19 @@
 <?php
 $LicensePlate = $_POST['lplate'];
 $SeasonTicketID = $_POST['sticket'];
+$EntryDate = $_POST['Entry-date'];
 
 require 'db.php';
 
-$send = "insert into parking.parking (LicensePlate, SeasonTicketID) values ('$LicensePlate', '$SeasonTicketID')";
+$send = "insert into parking.parking (LicensePlate, SeasonTicketID, EntryDate) values ('$LicensePlate', '$SeasonTicketID', '$EntryDate')";
 
 if($conn->query($send)) {
-    header('Location: ../forms.php');
-
+    header('Location: ../index.php');
 }
+
 else
 {
-    echo "er is iets foutgegaan" . $conn->error;
+    
+    echo $conn->error;
 }
 $conn->close();
