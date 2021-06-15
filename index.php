@@ -1,8 +1,6 @@
 <html>
 <head>
 
-<!--Bootstrap file link-->
-
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
 <style>
@@ -34,42 +32,30 @@ require "include/db.php";
 
 
 <body>
-
-<!--Linking to the send.php file-->
-
 <div id="container">
 <form action="include/send.php" method="POST" class="formpage">
-
-    <!--Parking title-->
 
 <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4"><legend>Parking</legend></div>
     <div class="col-md-4"></div>
    </div>
-
-    <!--Licenceplate field-->
-
+    
     <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4">
       <label for="lplate" class="form-label">licenceplate</label>
       <input type="text" id="lplate" class="form-control" placeholder="licenceplate" name="lplate">
     </div>
-
-    <!--Seasonticket ID field-->
-
     <div class="col-md-4"></div>
     </div>
     <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4">
-      <label for="lplate" class="form-label">seasonticket id</label>
+      <label for="lplate" class="form-label">seasonticked id</label>
       <input type="text" id="sticket" class="form-control" placeholder="id" name="sticket">
     </div>
-
-    <!--Entry date field-->
-
+  
     <div class="col-md-4"></div>
         </div>
         <div class="row">
@@ -80,8 +66,6 @@ require "include/db.php";
     </div>
     <div class="col-md-4"></div>
     </div>
-
-    <!--Submit button-->
 
     <div class="row">
     <div class="col-md-4"></div>
