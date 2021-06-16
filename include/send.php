@@ -1,11 +1,10 @@
 <?php
 $LicensePlate = $_POST['lplate'];
-$SeasonTicketID = $_POST['sticket'];
 $EntryDate = $_POST['Entry-date'];
 
 require 'db.php';
 
-$send = "insert into parking.parking (LicensePlate, SeasonTicketID, EntryDate) values ('$LicensePlate', '$SeasonTicketID', '$EntryDate')";
+$send = "insert into parking.parking (LicensePlate, EntryDate) values ('$LicensePlate', '$EntryDate')";
 
 if($conn->query($send)) {
     header('Location: ../welcome.php');
@@ -13,7 +12,7 @@ if($conn->query($send)) {
 
 else
 {
-    
+
     echo $conn->error;
 }
 $conn->close();

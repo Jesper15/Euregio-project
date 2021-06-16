@@ -30,13 +30,14 @@ margin: 4px;
 
 <?php
 require "include/db.php";
+include "include/header.php";
 ?>
 
 <!--Linking to the send.php file-->
 
 <body>
 <div id="container">
-<form action="include/send.php" method="POST" class="formpage">
+<form action="include/send_st.php" method="POST" class="formpage">
 
     <!--Parking title-->
 
@@ -62,7 +63,7 @@ require "include/db.php";
     <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4">
-      <label for="lplate" class="form-label">seasonticket id (type 1 for no seasonticket)</label>
+      <label for="lplate" class="form-label">seasonticket id</label>
       <input type="text" id="sticket" class="form-control" placeholder="id" name="sticket">
     </div>
 
