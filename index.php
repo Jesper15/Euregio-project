@@ -64,7 +64,7 @@ require "include/db.php";
     <div class="row">
     <div class="col-md-4"></div>
     <div class="col-md-4">
-      <label for="lplate" class="form-label">seasonticket id</label>
+      <label for="lplate" class="form-label">seasonticket id (type 1 for no seasonticket)</label>
       <input type="text" id="sticket" class="form-control" placeholder="id" name="sticket">
     </div>
 
@@ -76,7 +76,7 @@ require "include/db.php";
     <div class="col-md-4"></div>
     <div class="col-md-4">
       <label for="lplate" class="form-label">entrydate</label>
-      <input type="text" id="edate" class="form-control" placeholder="yyyy-mm-dd" name="Entry-date">
+      <input type="date" id="edate" class="form-control" placeholder="yyyy-mm-dd" name="Entry-date">
     </div>
     <div class="col-md-4"></div>
     </div>
